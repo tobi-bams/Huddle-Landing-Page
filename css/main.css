@@ -1,0 +1,200 @@
+/** The Import Section: Importing Google fonts **/
+
+@import url('https://fonts.google.com/specimen/Poppins');
+
+@import url ('https://fonts.google.com/specimen/Open+Sans');
+
+
+/** The Body Style Section **/
+
+body{
+	background: url("../images/bg-desktop.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: hsl(257, 40%, 49%);
+	font-family: 'open sans';
+	margin: 0 auto;
+	height: 100vh;
+	font-weight: 400;
+	
+}
+
+/** The Header style Structure **/
+
+header{
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+/** Header Image **/
+
+header img{
+	padding-top: 2em;
+	width: 12em;
+}
+/** Main Style Structure **/
+
+main{
+	margin-left: 7%;
+	margin-right: 7%;
+}
+
+/** The grid Structure **/
+
+.bodyStructure{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: : auto;
+	grid-gap: 1em;
+}
+
+/** The Image Grid Section **/
+
+#imageView {
+	margin-top: 2em;
+	grid-column: 1/4;
+	
+}
+
+/** the text Section **/
+
+#textBody {
+	grid-column: 4/6;
+	color: white;
+}
+
+/** Image Width **/
+
+#imageView img{
+	width: 95%;
+}
+
+/** Heading Section **/
+
+#intro {
+	font-family: 'Poppins';
+	font-weight: 400;
+	font-size: 2.5em;
+	margin-top: 2.3em;
+	margin-bottom: 0.5em;
+	
+}
+
+/** Button Styles **/
+
+#register {
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+	background-color: white;
+	color: hsl(257, 40%, 49%);
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-radius: 2em;
+	outline: none;
+	border: none;
+	box-shadow: 0 0 7px rgba(0,0,0,0.5);
+}
+
+/** Footer Section **/
+
+footer {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 1.5em;
+}
+
+/** Icons Styles **/
+
+#icons {
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#facebook {
+	padding: 0.5em;
+	border: 1px solid white;
+	margin-right: 1em;
+	border-radius: 100%;
+	font-size: 1em;
+	height: 1em;
+	line-height: 1;
+	text-align: center;
+}
+
+#twitter {
+	padding: 0.5em;
+	border: 1px solid white;
+	margin-right: 1em;
+	border-radius: 100%;
+	font-size: 1em;
+	height: 1em;
+	line-height: 1;
+	text-align: center;
+}
+
+#insta {
+	padding: 0.5em;
+	border: 1px solid white;
+	border-radius: 100%;
+	font-size: 1em;
+	height: 1em;
+	text-align: center;
+	line-height: 1;
+}
+
+/** Mobile View Styles **/
+
+@media(max-width: 375px){
+	
+	body{
+		background: url("../images/bg-mobile.svg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-color: hsl(257, 40%, 49%);
+	
+	}
+	
+	header img{
+		padding-top: 1.5em;
+		width: 9em;
+	}
+	
+	.bodyStructure{
+		display: flex;
+		flex-direction: column;
+		grid-template-rows: : repeat(2, 1fr);
+		text-align: center;
+	}
+	
+	#imageView {
+		margin-top: 2em;
+		grid-row: 1/2;
+
+	}
+
+	#textBody {
+		grid-row: 2/3;
+		color: white;
+	}
+
+	#imageView img{
+		width: 100%;
+	}
+	
+	#intro {
+		margin-top: 1em;
+		font-family: poppins;
+		margin-bottom: 0.5em;
+		font-size: 1.7em;
+		text-align: center;
+	
+	}
+	
+	#icons {
+		justify-content: center;
+		margin-bottom: 1em;
+	}
+}
